@@ -44,7 +44,7 @@ fi
 sftp -P $PORT $USER@$SERVER <<EOF
 rm -rf $REMOTE_DIR/libft || true  # Eliminar la carpeta remota si existe, ignorar errores si no existe
 mkdir $REMOTE_DIR  # Crear el directorio remoto si no existe
-put -r $LOCAL_DIR $REMOTE_DIR  # Subir la carpeta
+put -r $RENAMED_DIR $REMOTE_DIR  # Subir la carpeta
 bye
 EOF
 
